@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Worst Phonetics</title>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Worst Phonetic Dictionary</h1>
+      </header>
+    {% for letter, word, first_syllable in dictionary %}
+    <strong>{{letter|upper}}</strong> as in <strong>{{word|capitalize}}</strong> ({{first_syllable}})<br>
+    {% endfor %}
+    </div>
+  </body>
+</html>
